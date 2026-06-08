@@ -41,3 +41,6 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
+SELECT strftime('%Y', c23) AS "strftime('%Y', c23)", ROUND(AVG(c21), 4) AS "avg(c21)"
+FROM tbl2 
+GROUP BY strftime('%Y', c23);
